@@ -1,0 +1,10 @@
+
+WRITING EXTENDED SYSTEM TO OUTPUT FILE AT STEP 2000
+WRITING COORDINATES TO OUTPUT FILE AT STEP 2000
+The last position output (seq=-2) takes 0.001 seconds, 528.453 MB of memory in use
+WRITING VELOCITIES TO OUTPUT FILE AT STEP 2000
+The last velocity output (seq=-2) takes 0.001 seconds, 528.652 MB of memory in use
+====================================================
+
+WallClock: 26.060369  CPUTime: 24.018087  Memory: 528.667969 MB
+[Partition 0][Node 0] End of program

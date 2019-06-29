@@ -1,0 +1,20 @@
+NG: 1995  CPU: 274.398, 0.114554/step  Wall: 323.242, 0.117374/step, 0.00016302 hours remaining, 586.125000 MB of memory in use.
+TIMING: 1996  CPU: 274.561, 0.163019/step  Wall: 323.425, 0.183101/step, 0.000203445 hours remaining, 586.125000 MB of memory in use.
+TIMING: 1997  CPU: 274.679, 0.117878/step  Wall: 323.543, 0.11755/step, 9.79582e-05 hours remaining, 586.125000 MB of memory in use.
+TIMING: 1998  CPU: 274.797, 0.118146/step  Wall: 323.664, 0.120619/step, 6.70106e-05 hours remaining, 586.125000 MB of memory in use.
+TIMING: 1999  CPU: 274.914, 0.116979/step  Wall: 323.781, 0.117483/step, 3.26341e-05 hours remaining, 586.125000 MB of memory in use.
+TIMING: 2000  CPU: 275.166, 0.251527/step  Wall: 324.069, 0.288485/step, 0 hours remaining, 586.125000 MB of memory in use.
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:    2000     20385.2675     20286.2484      5709.0117       184.8491        -340537.6661     25108.0179         0.0000         0.0000     46434.0396        -222430.2320       168.9143   -268864.2716   -222054.5993       168.7921          -1352.3583     -1911.0415    921491.4634     -2047.4440     -2046.4548
+
+WRITING EXTENDED SYSTEM TO OUTPUT FILE AT STEP 2000
+WRITING COORDINATES TO OUTPUT FILE AT STEP 2000
+The last position output (seq=-2) takes 0.001 seconds, 589.555 MB of memory in use
+WRITING VELOCITIES TO OUTPUT FILE AT STEP 2000
+The last velocity output (seq=-2) takes 0.001 seconds, 589.555 MB of memory in use
+====================================================
+
+WallClock: 351.543030  CPUTime: 297.952484  Memory: 589.554688 MB
+[Partition 0][Node 0] End of program
+

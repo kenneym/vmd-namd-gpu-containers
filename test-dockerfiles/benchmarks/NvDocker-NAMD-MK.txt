@@ -1,0 +1,15 @@
+NG: 2000  CPU: 22.4528, 0.041495/step  Wall: 24.3482, 0.0430388/step, 0 hours remaining, 516.906250 MB of memory in use.
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:    2000     20241.4010     20199.3983      5734.7471       183.4152        -340103.7666     24968.9132         0.0000         0.0000     46346.5004        -222429.3913       168.5958   -268775.8918   -222053.2701       168.7257          -1226.5232     -1912.8783    921491.4634     -2073.4983     -2072.9048
+
+WRITING EXTENDED SYSTEM TO OUTPUT FILE AT STEP 2000
+WRITING COORDINATES TO OUTPUT FILE AT STEP 2000
+The last position output (seq=-2) takes 0.001 seconds, 530.027 MB of memory in use
+WRITING VELOCITIES TO OUTPUT FILE AT STEP 2000
+The last velocity output (seq=-2) takes 0.001 seconds, 530.070 MB of memory in use
+====================================================
+
+WallClock: 25.338425  CPUTime: 23.424038  Memory: 530.082031 MB
+[Partition 0][Node 0] End of program
+"apoa1.log" 2259L, 282411C                    

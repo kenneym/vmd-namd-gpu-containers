@@ -1,0 +1,29 @@
+read
+  mol pqr /var/tmp/apbs.79003/ionized.pqr
+end
+elec
+  mg-auto
+  dime 129 129 129
+  cglen 108.2490005493164 116.03700256347656 101.10150146484375
+  cgcent mol 1
+  fglen 108.2490005493164 116.03700256347656 101.10150146484375
+  fgcent mol 1
+  mol 1
+  lpbe
+  bcfl sdh
+  srfm smol
+  chgm spl2
+  ion 1 0.150 2.0
+  ion -1 0.150 2.0
+  pdie  1.0
+  sdie  78.54
+  sdens  10.0
+  srad  1.4
+  swin  0.3
+  temp  298.15
+  gamma  0.105
+  calcenergy no
+  calcforce no
+  write pot dx pot
+end
+quit

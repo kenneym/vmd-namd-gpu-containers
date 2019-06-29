@@ -1,0 +1,94 @@
+#############################################################
+## ADJUSTABLE PARAMETERS                                   ##
+#############################################################
+
+#genCompressedPsf on
+#usePluginIO yes
+#structure          stmv.psf
+
+useCompressedPsf on
+structure          stmv.psf.inter
+
+bincoordinates     stmv.coor
+
+outputName          stmv-output
+
+outputEnergies      200
+outputTiming        1
+
+numsteps            800 
+
+pmepencils 1
+pmeprocessors [numNodes]
+ldBalancer hybrid
+# ldBalancer none
+FFTWEstimate yes
+FFTWUseWisdom no
+
+langevinPistonBarrier off
+
+#############################################################
+## SIMULATION PARAMETERS                                   ##
+#############################################################
+
+# Input
+paraTypeCharmm	    on
+parameters          par_all27_prot_na.inp
+temperature         298
+
+
+# Force-Field Parameters
+exclude             scaled1-4
+1-4scaling          1.0
+cutoff              12.
+switching           on
+switchdist          10.
+pairlistdist        13.5
+
+
+# Integrator Parameters
+rigidBonds          all
+timestep            1.0
+nonbondedFreq       2
+fullElectFrequency  4  
+#pairlistsPerCycle   4
+stepspercycle       20
+
+
+# Constant Temperature Control
+langevin            on    ;# do langevin dynamics
+langevinDamping     5     ;# damping coefficient (gamma) of 5/ps
+langevinTemp        298
+langevinHydrogen    off    ;# don't couple langevin bath to hydrogens
+seed 3141
+
+
+# Constant Pressure Control (variable volume)
+useGroupPressure      yes ;# needed for rigidBonds
+useFlexibleCell       no
+useConstantArea       no
+
+langevinPiston        on
+langevinPistonTarget  1.01325 ;#  in bar -> 1 atm
+langevinPistonPeriod  200.
+langevinPistonDecay   100.
+langevinPistonTemp    298
+
+cellBasisVector1     216.832    0.   0.
+cellBasisVector2     0.   216.832    0.
+cellBasisVector3     0.    0   216.832
+cellOrigin           0.    0.   0. 
+
+PME                  on
+PMEInterpOrder       8
+PMEGridSpacing       2.1
+PMEGridSizeX         108
+PMEGridSizeY         108
+PMEGridSizeZ         108
+
+#proxySendSpanningTree   0
+PMEOffload              yes 
+usePMECUDA              no 
+#useCKLoop               0
+bondedCUDA              255
+useCUDA2		yes

@@ -1,0 +1,47 @@
+version: '2.4'
+
+services:
+  
+  CUDA-VMD:
+    image: cuda-vmd 
+    runtime: nvidia
+    stdin_open: true
+    tty: true
+    build: 
+        context: ./visual-vmd-centos7
+        args:
+          test: "False"
+
+    environment:
+      XAUTHORITY: /tmp/.docker.xauth
+      DISPLAY: $DISPLAY
+
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./workspace:/workspace
+
+  CUDA-NAMD:
+    stdin_open: true
+    tty: true
+    image: cuda-namd 
+    runtime: nvidia
+
+    build: 
+      context: ./cuda-namd-centos7
+      args:
+        test: "False"
+
+    volumes:
+      - ./workspace:/workspace
+
+  CPU-NAMD:
+    image: cpu-namd
+    stdin_open: true
+    tty: true
+    build: 
+      context: ./namd-centos7
+      args:
+        test: "False"
+
+    volumes:
+      - ./workspace:/workspace

@@ -1,0 +1,12 @@
+GY:    2000     20309.0385     20272.9963      5723.1249       186.6057        -340653.1718     25293.2794         0.0000         0.0000     46440.1282        -222427.9987       168.9364   -268868.1269   -222053.6096       169.0126          -1124.1066     -1802.8724    921491.4634     -2016.1411     -2015.7581
+
+WRITING EXTENDED SYSTEM TO OUTPUT FILE AT STEP 2000
+WRITING COORDINATES TO OUTPUT FILE AT STEP 2000
+The last position output (seq=-2) takes 0.001 seconds, 559.699 MB of memory in use
+WRITING VELOCITIES TO OUTPUT FILE AT STEP 2000
+The last velocity output (seq=-2) takes 0.001 seconds, 559.699 MB of memory in use
+====================================================
+
+WallClock: 28.174305  CPUTime: 26.225344  Memory: 559.699219 MB
+[Partition 0][Node 0] End of program
+

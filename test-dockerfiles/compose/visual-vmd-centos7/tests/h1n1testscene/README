@@ -1,0 +1,3 @@
+Swine Flu A/H1N1 neuraminidase bound to Tamiflu.
+
+vmd -dispdev openglpbuffer -e h1n1egl_colorbar.vmd
